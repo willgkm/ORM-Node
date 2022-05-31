@@ -6,6 +6,9 @@ const router = Router()
 router.get('/pessoas', PessoaController.pegaPessoasAtivas)
       .get('/pessoas/todos', PessoaController.pegaTodasPessoas)
       .get('/pessoas/:id', PessoaController.pegarUmaPessoa)
+
+      .get('/pessoas/:estudanteId/matricula', PessoaController.pegarMatriculaPorEstudanteId)
+
       .post('/pessoas', PessoaController.criarPessoa)
       .put('/pessoas/:id', PessoaController.updatePessoas)
       .delete('/pessoas/:id', PessoaController.deletePessoas)
