@@ -1,5 +1,4 @@
 const sequelize = require('sequelize')
-const Op = sequelize.Op('sequelize')
 
 'use strict';
 const {
